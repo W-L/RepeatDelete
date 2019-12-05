@@ -18,13 +18,13 @@ max_divergence <- 20
 min_fragment_len <- 100
 max_inter_fragment_distance <- 100
 color_divergence <- TRUE
+TE_len <- 2959
 
 
 #############################################################
 
 
 # read the input file
-TE_len <- 2959
 TE <- fread(cmd=paste("cat", input, "| tr '*' ' '"))
 
 # rename some variables and cast variable types into factors
